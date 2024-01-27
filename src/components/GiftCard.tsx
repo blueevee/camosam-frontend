@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Gift-card.css'
+import '../style/GiftCard.css'
 
 interface GiftCardProps {
     gift: {

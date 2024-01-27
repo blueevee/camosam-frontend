@@ -1,6 +1,5 @@
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   background-color: #062B64;
   padding: 2em;
   color: #f4f4f4;
@@ -9,7 +8,7 @@ body{
 .gifts-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .page-content{

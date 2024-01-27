@@ -4,7 +4,10 @@ import "../style/GuestList.css"
 
 
 interface Guest {
+  id: number;
   name: string;
+  email: string;
+  phone: string;
 }
 
 const GuestList: React.FC = () => {
@@ -12,10 +15,10 @@ const GuestList: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("https://randomuser.me/api/?results=5")
+      .get('http://127.0.0.1:8000/guest')
       .then((response) => {
-        setGuest(response.data.results.map((guest: Guest) => ({
-          name: guest.name.first + "  "+ guest.name.last,
+        setGuest(response.data.map((guest: Guest) => ({
+          name: guest.name,
         })))
       })
       .catch((error) => {

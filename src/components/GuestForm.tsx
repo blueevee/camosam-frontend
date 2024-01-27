@@ -10,22 +10,20 @@ const ConfirmAttendanceForm: React.FC = () => {
     email: '',
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
 
     try {
-      // Substitua 'API_ENDPOINT' pelo seu endpoint real
-    //   const response = await axios.post('API_ENDPOINT', formData);
-      console.log(formData); // Aqui você pode lidar com a resposta da API
+      await axios.post('http://127.0.0.1:8000/guest', formData);
+      console.log(formData);
 
-      // Limpar o formulário após o envio bem-sucedido
       setFormData({ name: '', phone: '', email: '' });
     } catch (error) {
-      console.error('Erro ao enviar dados:', error);
+      console.error('Erro ao enviar dados de novo convidado:', error);
     }
   };
 

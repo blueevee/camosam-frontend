@@ -1,7 +1,7 @@
 import React from 'react'
 import GuestForm from '../components/GuestForm'
 import GuestList from '../components/GuestList'
-import '../style/Home.css'
+import '../style/GiftsList.css'
 
 
 const Guests: React.FC = () => {

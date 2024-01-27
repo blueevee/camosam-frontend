@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './routes/Home.tsx'
+import GiftsList from './routes/GiftsList.tsx'
 import Guests from './routes/Guests.tsx'
 import About from './routes/About.tsx'
 import ErrorPage from './routes/ErrorPage.tsx'
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>
+        element: <GiftsList/>
       },
       {
         path: 'gifts',
-        element: <Home/>
+        element: <GiftsList/>
       },
       {
         path: 'guests',

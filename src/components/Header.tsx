@@ -11,7 +11,7 @@ const Header: React.FC = () => {
             <Link to="/" className='link'> <img src={logo} alt="camosam logo" /></Link>
             </div>
             <nav className="pages">
-                    <Link className='link' to="/gifts#gifts-sec">Lista de presentes</Link>
+                    <Link className='link' to="/gifts">Lista de presentes</Link>
                     <Link className='link' to="/guests">Convidados confirmados</Link>
                     <Link className='link' to="/about">Sobre</Link>
             </nav>

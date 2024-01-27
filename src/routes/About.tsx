@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Home.css'
+import '../style/GiftsList.css'
 import '../style/About.css'
 import leosam from '../assets/sam-1.png';
 import mafsam from '../assets/sam-2.png';

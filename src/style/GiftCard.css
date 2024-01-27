@@ -25,7 +25,6 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-content: flex-start;
-  /* background-color: #aaa; */
 }
 .content p {
   font-size: 1.1rem;
@@ -53,4 +52,45 @@
 }
 .give-btn:hover {
   background-color: #45a049;
+}
+
+.pix-modal{
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pix-modal-content{
+  background-color: rgb(230, 220, 220);
+  padding: 2em;
+  max-width: 30em;
+  min-width: 8em;
+  border-radius: 7%;
+  color: #02143b;
+}
+
+.close-modal-btn {
+  background-color: transparent;
+  color: rgb(189, 79, 79);
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.qr-code-pix{
+  border: .5rem solid #02143b;
+  border-radius: 2em;
+  align-self: center;
+  max-height: 25em;
+  min-height: 7em;
+  max-width: 25em;
+  min-width: 7em;
 }
